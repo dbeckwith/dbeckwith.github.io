@@ -1,11 +1,7 @@
 {
   "name": "website",
   "type": "module",
-  "dependencies": {
-    "tailwindcss": "^4.0.7"
-  },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.0.7",
     "vite": "^6.1.1"
   }
 }
