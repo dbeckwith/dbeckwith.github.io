@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>Daniel Beckwith</h1>
+      <h1><img src="avatar.jpg" class="avatar" /> Daniel Beckwith</h1>
       <p>exploring math, science, and art through code</p>
     </header>
     <main>
@@ -26,6 +26,8 @@
         some of the projects I've undertaken.
       </p>
 
+      <hr />
+
       <article>
         <h2>Followers</h2>
         <p class="tags">
@@ -41,23 +43,22 @@
           on a simple dynamic simulation.
         </p>
         <p class="description">
-          The positions of particles are traced over time to produce winding,
-          intersecting trails. The motion of the particles is determined by
-          having each one target a particular position and head for it. The
-          target position is determined by the location of two other randomly
-          chosen particles, or "partners". The target position lies "behind" the
-          first partner on the line connecting the first partner to the second
-          partner. Partners are chosen randomly, so based on the number of
-          particles and the seed value, different networks of partners can
-          produce a large variety of chaotic cyclic interactions. Simulation
-          parameters such as the maximum acceleration of the particles, particle
-          count, and initial particle positions also affect the result. The
-          simulation is run until a set iteration count is reached. Then the
-          resulting image of the traced particle paths can be downloaded as a
-          PNG or SVG.
+          The positions of many particles are traced over time to produce
+          winding, intersecting trails. The particles move by targeting a
+          particular position and heading for it. The target position is
+          determined using the location of two other randomly chosen particles,
+          or "partners". The target position lies "behind" the first partner on
+          the line connecting the first partner to the second partner. Partners
+          are chosen randomly, so the number of particles and the seed value
+          product different networks of partners, which can produce a large
+          variety of chaotic cyclic interactions. Simulation parameters such as
+          the maximum acceleration of the particles, particle count, and initial
+          particle positions also affect the result. The simulation is run until
+          a set iteration count is reached. Finally the resulting image of the
+          traced particle paths can be downloaded as a PNG or SVG.
         </p>
         <p class="description">
-          This project started as a way for me to test out using
+          This project was a good way for me to test out using
           <a href="https://www.rust-lang.org/">Rust</a> in the browser. Rust is
           my favorite programming language, and the fact that I can use it to
           build apps like this targeting

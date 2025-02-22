@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --color-white-1: #555;
-  --color-white-2: #777;
-  --color-white-3: #999;
-  --color-white-4: #bbb;
+  --color-white-1: #666;
+  --color-white-2: #888;
+  --color-white-3: #aaa;
+  --color-white-4: #ccc;
   --color-white-5: #ddd;
 
   --color-primary-1: #1e2a40;
@@ -24,10 +24,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-body {
-  max-width: 64rem;
 
   font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
@@ -38,12 +34,36 @@ body {
   font-size: 14px;
 
   color-scheme: light dark;
-  color: var(--color-white-5);
+  color: var(--color-white-4);
   background: #242424;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-white-5);
+}
+
+body {
+  max-width: 64rem;
+}
+
+header h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+img.avatar {
+  max-width: 2em;
+  border-radius: 100%;
+}
+
 header p {
-  color: var(--color-white-4);
+  color: var(--color-white-3);
   font-style: italic;
 }
 
@@ -65,16 +85,26 @@ code {
   font-family: 'Roboto Mono', monospace;
 }
 
+hr {
+  color: transparent;
+  border-top: 1px solid var(--color-white-2);
+}
+
 .tags-label {
-  color: var(--color-white-3);
+  color: var(--color-white-2);
 }
 
 .tag {
-  border-radius: 4px;
-  padding: 0 2px;
+  border-radius: 0.3em;
+  padding: 0 0.2em;
 
-  background-color: var(--color-secondary-4);
-  color: #222;
+  border: 1px solid var(--color-secondary-3);
+  color: var(--color-white-3);
+}
+
+.tag:hover {
+  border-color: var(--color-secondary-4);
+  color: var(--color-white-4);
 }
 
 .summary {
