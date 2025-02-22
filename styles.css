@@ -94,12 +94,25 @@ article {
   margin-block-end: 1em;
 }
 
+.links {
+  display: flex;
+  gap: 0.5em;
+}
+
+.links a:before {
+  content: '[';
+}
+.links a:after {
+  content: ']';
+}
+
 .gallery {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 1em;
+  margin-block: 0.5em;
 }
 
 .gallery img {
