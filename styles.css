@@ -94,6 +94,29 @@ article {
   margin-block-end: 1em;
 }
 
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.gallery img {
+  display: block;
+  max-width: 5em;
+  max-height: 10em;
+}
+
+.gallery a {
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.gallery a:hover {
+  border-color: var(--color-secondary-3);
+}
+
 .date {
   color: var(--color-white-3);
   font-weight: normal;
