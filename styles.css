@@ -47,7 +47,7 @@ h5 {
 }
 
 body {
-  max-width: 64rem;
+  max-inline-size: 64rem;
 }
 
 header h1 {
@@ -58,7 +58,7 @@ header h1 {
 }
 
 img.avatar {
-  max-width: 2em;
+  max-inline-size: 2em;
   border-radius: 100%;
 }
 
@@ -117,8 +117,8 @@ article {
 
 .gallery img {
   display: block;
-  max-width: 5em;
-  max-height: 10em;
+  max-inline-size: 5em;
+  max-block-size: 10em;
 }
 
 .gallery a {
