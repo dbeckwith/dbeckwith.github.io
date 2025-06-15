@@ -63,8 +63,22 @@ img.avatar {
 }
 
 header p {
+  margin-block: 0.4em;
+
   color: var(--color-white-3);
   font-style: italic;
+}
+
+header p.subtitle {
+  margin-block: 1em;
+}
+
+header .icon {
+  inline-size: 1em;
+}
+
+header p.job .icon {
+  vertical-align: middle;
 }
 
 a {
